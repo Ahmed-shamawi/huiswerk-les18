@@ -28,7 +28,7 @@ body{
     }
     #koptekst .bg-image {
         position: absolute;
-        background: rgb(6, 76, 141) url(/images/brett-sayles.jpg);
+        background: rgb(6, 76, 141) url(images/brett-sayles.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
