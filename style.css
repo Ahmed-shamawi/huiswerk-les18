@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+}
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+[class*="col-"] {
+    width: 100%;
+} 
+
+    #koptekst {
+        width: 100%;
+        min-height: 350px;
+    }
+    #koptekst .bg-image {
+        position: absolute;
+        background: rgb(6, 76, 141) url(./images/brett-sayles.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+        z-index: -1;
+    }
+
+    #koptekst h1{
+        padding-top: 100px;
+        padding-bottom: 0;
+        font-size: 3em;
+        font-weight: bold;
+    }
+    #koptekst p{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .faiten{
+        background: #035496;
+        margin-right: 0;
+    }
+    .faiten ul {
+        margin: 0;
+        padding: 0.5em;
+        list-style-type: none;
+        text-align: left;
+    }
+    .faiten li {
+        padding: 0.2em;
+        margin: 0.5em 0;
+        color: white;
+    }
+    
+    .text {
+        background: #023f71;
+        margin: 1em 0;
+        padding: 1em 1em 1em;
+    }
+
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid white;
+        border-radius: 1em;
+    }
+
+    .inhoud-tekst{
+        padding: 1em 0.5em;
+    }
+    .inhoud-tekst {
+        margin: 0;
+        padding: 1em 0;
+    }
+    .inhoud-tekst h2{
+        color: #ed2b3f; 
+    }
+    .inhoud-tekst p{
+        padding: 1em 0;  
+    }
+    span{
+        color: #ed2b3f;
+    }
+
+    
+    
+    #main-footer{
+        padding: 1em;
+        background: #000;
+        color: #fff;
+        text-align: center;
+    }
+    
+    #main-footer a{
+        color: #2690d4;
+        text-decoration: none;
+    }
+
+
+@media only screen and (min-width: 768px) {
+    [class*="col-"] {
+        float: left;
+        padding: 1em;
+    }
+    .container{
+        margin: 0;
+        display: inline-block;
+        min-height: 100vh;
+    }
+   
+    .col-2 {width: 16.66%;}
+    .col-9 {width: 75%;}
+    
+    .faiten { 
+        margin-top: 2em;
+        margin-left: 1em;
+        background: #262e32;
+        /* font-size: 0.8em; */
+    }
+    .faiten ul {
+        text-align: left;
+    }
+    .text{
+        background-color: #262e32;
+        margin-bottom: 3em;
+    }
+
+    .inhoud-tekst p{
+        margin-bottom: 4em;
+        padding: 1em;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+
+    img{
+        display: grid;
+        float: right;
+        width: 40%;
+        padding: 0.5em;
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+    
+    #koptekst .bg-image{
+        background-position: center;
+    }
+}
+
+
